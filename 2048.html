@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My 2048</title>
+	<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+
+	#score{
+		text-align: center;
+		font-size:40px;
+		font-family: "Microsoft YaHei";  /*设置字体为微软雅黑*/
+		margin-top: 20px;
+
+	}
+	#wrap{
+		position: relative;
+	}
+	#canvas{
+		position: absolute;
+		left: 50%;
+		margin-left: -250px;
+		margin-top: 30px;
+		background-color: rgb(187, 173, 160);
+		border-radius: 10px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="score">Score:  0</div> 
+	<div id="wrap">
+		<canvas id="canvas" width=500 height=500></canvas>
+	</div>
+	<script type="text/javascript" src="control.js"></script>
+</body>
+</html>
